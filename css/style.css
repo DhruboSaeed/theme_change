@@ -84,7 +84,7 @@ input {
 }
 
 .details-text {
-  margin-top: 150px;
+  margin-top: 60px;
 }
 
 .details-text span {
@@ -101,4 +101,14 @@ input {
 #toggle-button{
     width: 30px;
     cursor: pointer;
+}
+
+@media (min-width: 300px) and (max-width: 419px) {
+  .details-text span{
+    font-size: 16px;
+  }
+
+  .details-text{
+    margin-top: unset;
+  }
 }
