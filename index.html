@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="container">
+        <div class="header-logo-text">
+          <div class="header">
+            <a href="" class="header-logo">
+              <span class="dark-text">Bari</span>
+              <span class="text">Koi</span>
+            </a>
+          </div>
+          <div class="theme-change">
+            <div>
+              <img src="./images/moon.png" alt="" id="toggle-button" />
+            </div>
+          </div>
+        </div>
+
+        <div class="search-bar-section">
+          <div class="main">
+            <input
+              type="text"
+              name="box"
+              placeholder="Search here anything..."
+            />
+            <div class="search-icon">
+              <i class="fa fa-search" style="font-size: 24px"></i>
+            </div>
+          </div>
+        </div>
+        <div class="details-text">
+          <span
+            >After graduating from Computer Science Engineering Al Amin Tayef
+            with Sadman Sakib and Reedwan Hossain saw an opportunity to cash in
+            on this lacking the otherwise very efficient google service. Four
+            years ago, he founded Barikoi— a location data provider that aims to
+            provide reliable location data in the local context. ​</span
+          >
+        </div>
+      </div>
+    </div>
+    <script>
+      let darkMode = localStorage.getItem("darkMode");
+
+      const darkModeToggle = document.getElementById("toggle-button");
+
+      const enableDarkMode = () => {
+        document.body.classList.add("dark-mode");
+        localStorage.setItem("darkMode", "enabled");
+      };
+
+      const disableDarkMode = () => {
+        document.body.classList.remove("dark-mode");
+        localStorage.setItem("darkMode", null);
+      };
+
+      if (darkMode === "enabled") {
+        enableDarkMode();
+      }
+
+      darkModeToggle.addEventListener("click", () => {
+        darkMode = localStorage.getItem("darkMode");
+        if (darkMode !== "enabled") {
+          darkModeToggle.src = "./images/sun.png";
+          enableDarkMode();
+        } else {
+          darkModeToggle.src = "./images/moon.png";
+          disableDarkMode();
+        }
+      });
+    </script>
+  </body>
+</html>

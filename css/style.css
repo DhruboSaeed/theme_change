@@ -1,0 +1,104 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Rubik", sans-serif;
+}
+
+:root {
+  --clr-light: #fff;
+  --clr-dark: black;
+
+  --clr-primary: #fff;
+  --clr-secondary: black;
+}
+
+.dark-mode {
+  --clr-light: #fff;
+  --clr-dark: black;
+  background-color: black;
+  --clr-primary: black;
+  --clr-secondary: #fff;
+}
+
+.main_container {
+  padding: 50px;
+}
+
+.container {
+}
+
+.header-logo-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+  text-decoration: none;
+}
+
+.dark-text {
+  color: var(--clr-secondary);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.text {
+  color: #2ddbac;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: -5px;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 78%;
+  padding: 10px;
+  box-shadow: 3px 4px 10px 4px var(--clr-secondary);
+}
+
+input {
+  border: none;
+  height: 40px;
+  width: 95%;
+  padding: 0px 10px;
+  font-size: 20px;
+  background: transparent;
+  color: var(--clr-secondary);
+}
+
+.search-icon {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-secondary);
+}
+
+*:focus {
+  outline: none;
+}
+
+.details-text {
+  margin-top: 150px;
+}
+
+.details-text span {
+  font-size: 20px;
+  color: var(--clr-secondary);
+}
+
+/* Toggle Button */
+
+.theme-change {
+  margin-top: 10px;
+}
+
+#toggle-button{
+    width: 30px;
+    cursor: pointer;
+}
