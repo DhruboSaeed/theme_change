@@ -119,11 +119,11 @@ input {
 }
 
 @media (min-width: 500px) and (max-width: 855px) and (orientation: landscape) {
-  .bar-details-section{
+  .bar-details-section {
     margin-top: unset;
   }
 
-  .container{
+  .container {
     padding: 20px 0px;
   }
 }
